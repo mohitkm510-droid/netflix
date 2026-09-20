@@ -3,6 +3,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    background-color: black;
 }
 
 .box{
@@ -11,12 +12,14 @@ display: flex;
 flex-direction: column;
 justify-content: center;
     width: 500px;
-    height: 300px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.064);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.585);
+    color: white;
     padding: 20px;
     border-radius: 10px;
-
+border: 1px solid #ccc;
 }
 
 h3{
@@ -91,4 +94,37 @@ button{
     background-color: #0056b3;
     transition: background-color 0.3s;
     transform: scale(1.05);
+}
+
+
+@media (max-width: 600px) {
+
+    .box {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .contanier {
+        flex-direction: column;
+    }
+
+    .image {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .flw {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .buttons {
+        gap: 5px;
+    }
+
+    .buttons button {
+        padding: 8px;
+        font-size: 12px;
+    }
 }
